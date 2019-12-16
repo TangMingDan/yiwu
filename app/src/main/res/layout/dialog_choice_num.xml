@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/size_10dp">
+    <LinearLayout
+        android:id="@+id/customDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:text="上架数量"/>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.example.yiwu.customView.PickerView
+                android:id="@+id/picker"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </com.example.yiwu.customView.PickerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

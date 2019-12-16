@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_chat_left"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_userfrom"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+<!--            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                android:layout_marginLeft="@dimen/dp_10"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:src="@drawable/shopcar"-->
+<!--                android:id="@+id/img_userfrom"-->
+<!--                android:layout_width="45dp"-->
+<!--                android:layout_height="45dp"/>-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_gravity="center_vertical"
+                android:text="江南小王子"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textSize="@dimen/size_15dp"
+                android:id="@+id/txt_userfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/txt_chat_left_img"
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_chat_left_message"
+        android:textSize="@dimen/sp_16"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:maxWidth="200dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/message_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_chat_left_time"
+        android:text="2019-10-8 17:12:22"
+        android:textSize="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_chat_right"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="center_vertical"
+            android:text="江南小王子"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textSize="@dimen/size_15dp"
+            android:id="@+id/txt_userto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_userto"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:layout_marginRight="@dimen/dp_10"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:src="@drawable/shopcar"-->
+<!--            android:id="@+id/img_userto"-->
+<!--            android:layout_width="45dp"-->
+<!--            android:layout_height="45dp"/>-->
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/txt_chat_right_img"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:minHeight="20dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_chat_right_message"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:background="@drawable/message_right"
+            android:layout_width="wrap_content"
+            android:maxWidth="200dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_chat_right_time"
+            android:text="2019-10-8 17:12:22"
+            android:textSize="@dimen/dp_10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

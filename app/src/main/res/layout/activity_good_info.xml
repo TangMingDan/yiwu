@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GoodInfoActivity">
+
+    <include layout="@layout/header_goodsinfo"
+        android:id="@+id/goods_info_toolbar"
+        />
+
+    <com.youth.banner.Banner
+        android:id="@+id/goods_info_img"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/goods_info_toolbar"
+        app:layout_constraintVertical_bias="0.11"
+        tools:layout_editor_absoluteX="16dp" />
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/goods_info_introducation"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:maxLines="3"
+        android:lineSpacingExtra="@dimen/size_10dp"
+        android:padding="10dp"
+        android:gravity="center|left"
+
+        android:text="Razer雷蛇 黑寡妇蜘蛛幻彩X竞技RGB电竞电脑游戏机械键盘青轴台式笔记本通用"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goods_info_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/goods_info_collect"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:src="@drawable/heart_b"
+        app:layout_constraintBottom_toTopOf="@+id/goods_info_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goods_info_introducation"
+        app:layout_constraintTop_toBottomOf="@+id/goods_info_img" />
+
+    <TextView
+        android:id="@+id/goods_info_price"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_30dp"
+        android:text="￥299.00"
+        android:textColor="@color/red_btn_color_pressed"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goods_info_introducation"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_btn_color_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goods_info_price"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/goods_info_addtobuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/goods_info_add"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@color/grey_btn_color_normal"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/shopcar"
+            android:text="收藏"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <Button
+            android:id="@+id/goods_info_buy"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/orange"
+            android:text="联系卖家"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/goods_info_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:drawableRight="@drawable/next"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_30dp"
+        android:text="商品评价"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toTopOf="@+id/goods_info_addtobuy"
+        app:layout_constraintTop_toBottomOf="@+id/goods_info_detial"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/goods_info_detial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_5dp"
+        android:maxLines="5"
+        android:background="@color/white"
+        android:text="Razer雷蛇 黑寡妇蜘蛛幻彩X竞技RGB电竞电脑游戏机械键盘青轴台式笔记本通用Razer雷蛇
+        黑寡妇蜘蛛幻彩X竞技RGB电竞电脑游戏机械键盘青轴台式笔记本通用"
+        android:textColor="@color/grey_btn_stroke_color_pressed"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/goods_info_addtobuy"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="33dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

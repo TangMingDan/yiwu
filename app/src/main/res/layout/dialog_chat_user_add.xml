@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        app:contentInsetStart="0dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="添加对话"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/txt_chat_add_userId"
+        android:hint="请输入对方的Id"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/seach_shape"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:layout_marginBottom="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:textSize="@dimen/size_20dp"
+            android:textColor="@color/white"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_decide_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textSize="@dimen/size_20dp"
+            android:layout_marginBottom="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:textColor="@color/white"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

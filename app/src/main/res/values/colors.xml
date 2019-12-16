@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="orange">#ffff6f36</color>
+    <color name="white">#ffffffff</color>
+    <color name="bg_common_gray">#ffe2e2e2</color>
+    <!-- 洋李色 -->
+    <color name="gainsboro">#dcdcdc</color>
+    <color name="title_bar_search_text_color">#ffffa37e</color>
+    <color name="title_bar_search_color">#ffe55c26</color>
+    <color name="colorBlue">#7EC0EE</color>
+    <color name="colorLightBlue">#A4D3EE</color>
+    <color name="tab_selected">#fb773b</color>
+    <color name="tab_normal">#c5c9d0</color>
+    <color name="transparency">#003793c7</color>
+    <color name="grad">#ff3c3c3c</color>
+    <color name="red_btn_color_disable">#7fff5454</color>
+    <color name="red_btn_color_pressed">#ffd24242</color>
+    <color name="red_btn_color_normal">#ffff5454</color>
+    <color name="black">#000</color>
+    <color name="border_color">#a9b7b7</color>
+    <color name="gray">#80666666</color>
+    <!-- 暗金黄色 -->
+    <color name="firebrick">#b22222</color>
+    <color name="app_green_normal">#ff20c9b5</color>
+    <color name="login_unable_bg_green">#ff90e4da</color>
+    <color name="app_green">#ff1db9a7</color>
+    <color name="grey_btn_color_pressed">#ffd8d8d8</color>
+    <color name="grey_btn_color_disable">#7fd8d8d8</color>
+    <color name="grey_btn_stroke_color_normal">#ffbebebe</color>
+    <color name="grey_btn_stroke_color_pressed">#ff9e9e9e</color>
+    <color name="grey_btn_stroke_color_disable">#7f9e9e9e</color>
+    <color name="grey_btn_color_normal">#fff1f1f1</color>
+    <color name="base_color">#505050</color>
+    <color name="gray_light">#eee</color>
+    <color name="blue">#aa00aeef</color>
+
+</resources>

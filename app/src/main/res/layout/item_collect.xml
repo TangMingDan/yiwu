@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/item_collect_shape"
+    android:layout_margin="@dimen/size_10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/collect_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:layout_marginBottom="@dimen/size_15dp"
+        android:src="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
+        tools:ignore="MissingConstraints"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/colletc_introducation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:gravity="center"
+        android:text="自己动手做无人机 无人机制作教程书籍 无人机工作原理"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toEndOf="@+id/collect_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <TextView
+        android:id="@+id/collect_repertory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1373库存"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/size_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toEndOf="@+id/collect_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/collect_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥15.15"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/size_15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintRight_toRightOf="@+id/collect_repertory"
+        app:layout_constraintStart_toEndOf="@+id/collect_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/collect_merchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="出售商家"
+        android:gravity="right"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

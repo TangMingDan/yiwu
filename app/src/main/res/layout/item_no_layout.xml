@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_no"
+    android:gravity="center"
+    android:drawableTop="@mipmap/net_failed"
+    android:textColor="@color/grey_btn_stroke_color_normal"
+    android:visibility="visible"
+    android:textSize="@dimen/sp_16"
+    android:padding="@dimen/dp_10">
+
+</androidx.appcompat.widget.AppCompatTextView>

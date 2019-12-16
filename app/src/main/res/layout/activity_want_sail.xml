@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_send"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:textColor="@color/colorBlue"
+            android:layout_centerVertical="true"
+            android:text="上架" />
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="11dp"
+            android:text="取消" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="@dimen/size_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/goods_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:text="*"
+                    android:textColor="#ff4824"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginBottom="15.0dip"
+                    android:gravity="center_vertical"
+                    android:text="物品名称"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+                <EditText
+                    android:id="@+id/input_goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+
+                    android:hint="输入物品名称(不超过15字)"
+                    android:singleLine="true"
+                    android:textColor="#ff999999"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/goods_price_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:text="*"
+                    android:textColor="#ff4824"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginBottom="15.0dip"
+                    android:gravity="center_vertical"
+                    android:text="物品价格(元)"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+                <EditText
+                    android:id="@+id/input_goods_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:hint="输入物品价格"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="#ff999999"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dp"
+                    android:layout_marginLeft="15.0dp"
+                    android:text="*"
+                    android:textColor="#ff4824"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/work_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/star1"
+                    android:gravity="center_vertical"
+                    android:text="物品详细信息："
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/input_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_120dp"
+                    android:layout_below="@+id/work_content"
+                    android:layout_marginLeft="@dimen/size_15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/size_15dp"
+                    android:background="@drawable/bg_edit_style_gray"
+                    android:gravity="top|left"
+                    android:hint="输入物品详细信息(100字以内)"
+                    android:textSize="@dimen/size_15sp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_15dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/sail_goods_num_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:text="*"
+                    android:textColor="#ff4824"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginBottom="15.0dip"
+                    android:gravity="center_vertical"
+                    android:text="选则物品数量"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/forward_img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/size_15dp"
+                        android:background="@drawable/icon_forward" />
+                    <TextView
+                        android:id="@+id/sail_goods_num_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toLeftOf="@id/forward_img1"
+                        android:text="选则物品数量"
+                        android:textColor="#ff999999"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/sail_school_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="*"
+                        android:textColor="#ff4824"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15.0dip"
+                        android:layout_marginBottom="15.0dip"
+                        android:gravity="center_vertical"
+                        android:text="选则上架学校"
+                        android:textColor="@color/black"
+                        android:textSize="16.0sp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/forward_img2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/size_15dp"
+                            android:background="@drawable/icon_forward" />
+                        <TextView
+                            android:id="@+id/sail_goods_school_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toLeftOf="@id/forward_img2"
+                            android:text="选则上架学校"
+                            android:textColor="#ff999999"
+                            android:textSize="16.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/sail_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.0dip"
+                        android:text="*"
+                        android:textColor="#ff4824"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15.0dip"
+                        android:layout_marginBottom="15.0dip"
+                        android:gravity="center_vertical"
+                        android:text="选则物品种类"
+                        android:textColor="@color/black"
+                        android:textSize="16.0sp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/forward_img3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/size_15dp"
+                            android:background="@drawable/icon_forward" />
+                        <TextView
+                            android:id="@+id/sail_goods_tag_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toLeftOf="@id/forward_img3"
+                            android:text="选则物品种类"
+                            android:textColor="#ff999999"
+                            android:textSize="16.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <GridView
+                android:id="@+id/sailGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:horizontalSpacing="4dp"
+                android:numColumns="4"
+                android:verticalSpacing="5dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

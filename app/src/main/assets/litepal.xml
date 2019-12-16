@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="chat"></dbname>
+
+    <version value="11"></version>
+
+    <list>
+        <mapping class="com.example.yiwu.activity.chat.Message"></mapping>
+        <mapping class="com.example.yiwu.activity.chat.ChatUser"></mapping>
+    </list>
+</litepal>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_common_gray"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/register_titleBar_iv_back"
+            style="@style/common_left_back_imageView_style"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="注册"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/register_et_username"
+                style="@style/login_editText_style"
+
+                android:hint="请输入用户名"/>
+            <View
+                style="@style/me_horizontal_view_style"/>
+            </RelativeLayout>
+            <View
+                style="@style/me_horizontal_view_style"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/register_phoneNumber"
+                    style="@style/login_editText_style"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:hint="请输入手机号"/>
+
+            </RelativeLayout>
+            <View
+                style="@style/me_horizontal_view_style"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/register_emailNumber"
+                    style="@style/login_editText_style"
+                    android:inputType="textWebEmailAddress"
+
+                    android:hint="请输入邮箱"/>
+
+            </RelativeLayout>
+            <View
+                style="@style/me_horizontal_view_style"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/register_et_code"
+                    style="@style/login_editText_style"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="5"/>
+                <Button
+                    android:id="@+id/register_btn_getCode"
+                    style="@style/login_btn_getCode_style"/>
+
+            </RelativeLayout>
+            <View
+                style="@style/me_horizontal_view_style"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/register_et_password"
+                    style="@style/login_editText_style"
+                    android:inputType="textPassword"
+                    android:hint="请输入密码"/>
+
+
+            </RelativeLayout>
+            <View
+                style="@style/me_horizontal_view_style"/>
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/register_et_repassword"
+                style="@style/login_editText_style"
+                android:inputType="textPassword"
+                android:hint="请确认密码"/>
+            </RelativeLayout>
+            <View
+                style="@style/me_horizontal_view_style"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/register_et_userjobID"
+                    style="@style/login_editText_style"
+
+                    android:hint="请输入学号"/>
+            </RelativeLayout>
+                <View
+                    style="@style/me_horizontal_view_style"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/register_et_school"
+                    style="@style/login_editText_style"
+                    android:text="请选则学校"/>
+                <View
+                    style="@style/me_horizontal_view_style"/>
+            </RelativeLayout>
+            <View
+                style="@style/me_horizontal_view_style"/>
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="登录密码为6位以上数字和字母的组合，区分大小写"
+        android:textColor="@color/gray"/>
+
+
+    <Button
+        android:id="@+id/register_btn_register"
+        style="@style/login_btn_style"
+        android:text="注册"/>
+
+</LinearLayout>

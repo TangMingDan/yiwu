@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="common_left_back_imageView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/back</item>
+
+        <!--<item name="android:layout_marginLeft">15dp</item>-->
+        <!--<item name="android:layout_marginTop">15dp</item>-->
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="common_right_title_textView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--登录输入框样式-->
+    <style name="login_editText_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">@dimen/size_14sp</item>
+    </style>
+    <style name="me_horizontal_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:background">#50666666</item>
+    </style>
+    <!--登录按钮样式-->
+    <style name="login_btn_style" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">@color/orange</item>
+        <item name="android:enabled">true</item>
+        <item name="android:text">"登陆"</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_18sp</item>
+    </style>
+    <!--获取验证码按钮样式-->
+    <style name="login_btn_getCode_style" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/btn_get_code_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">"获取邮箱验证码"</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_14sp</item>
+    </style>
+
+    <!--dialog的主题-->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <!--去掉边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--允许模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--背景黑色-->
+        <item name="android:windowBackground">@color/black</item>
+        <!--悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--没有标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--全屏幕-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--dialog的baseActivity中主题-->
+    <style name="dialogT" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--去掉边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--允许模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--背景黑色-->
+        <item name="android:windowBackground">@color/black</item>
+        <!--悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--没有标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--全屏幕-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="bigRedButton" parent="@style/bigButton">
+        <item name="android:background">@drawable/bg_btn_style_red</item>
+    </style>
+    <style name="bigButton">
+        <item name="android:textSize">@dimen/size_18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/size_16dp</item>
+        <item name="android:paddingRight">@dimen/size_16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">32dp</item>
+    </style>
+</resources>

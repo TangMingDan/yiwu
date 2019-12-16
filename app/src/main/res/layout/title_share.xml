@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_250dp">
+
+            <ImageView
+                android:id="@+id/headBkg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/bg_classify"
+                android:scaleType="fitXY" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/size_20dp"
+                android:src="@mipmap/zhuyinyi"/>
+
+            <LinearLayout
+                android:id="@+id/menu_friend"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity = "center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_16sp"
+                        android:text="关注"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity = "center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_16sp"
+                        android:text="发现"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity = "center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_16sp"
+                        android:text="卖家秀"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity = "center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_16sp"
+                        android:text="关注"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/spaceTopChange"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/transparency">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="分享一下"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

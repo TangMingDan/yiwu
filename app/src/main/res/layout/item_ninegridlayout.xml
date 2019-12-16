@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/share_head"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/share_name"
+                android:text="小明"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/share_content"
+                android:layout_marginTop="5dp"
+                android:text="今天天气真好，好开心！！！！！！！！！！！！！！！！！"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.yiwu.customView.NineGridLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/iv_ngrid_layout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                />
+
+            <com.example.yiwu.customView.CustomImageView
+                android:layout_marginTop="8dp"
+                android:id="@+id/iv_oneimage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_mine"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/share_time"
+                    android:text="3分钟前"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/good"
+                    android:layout_width="@dimen/size_18dp"
+                    android:layout_height="@dimen/size_18dp"
+                    android:layout_toRightOf="@id/share_time"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    android:src="@mipmap/good"/>
+                <TextView
+                    android:id="@+id/like_num_txt"
+                    android:layout_toRightOf="@id/good"
+                    android:text="1234"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
